@@ -40,9 +40,17 @@ void merge(int arr[], int l, int h) {
 }
 
 int main() {
-    int arr[7] = {90, 4, 12, 11, 3333, 0, 1111};
-    merge(arr, 0, 7 - 1);
-    for (int i = 0; i < 7; i++) {
+    int n;
+    printf("Enter the no. elemts want to enter::\n");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        printf("Enter the %d element:",i+1);
+        scanf("%d",&arr[i]);
+    }
+    int no = sizeof(arr) / sizeof(arr[0]);
+    merge(arr, 0, no - 1);
+    for (int i = 0; i < no; i++) {
         printf("%d\n", arr[i]);
     }
     return 0;
