@@ -1,3 +1,5 @@
+*/Time Complexity: O(M ^ V), Since these are the total number of color combinations.
+Auxiliary Space: O(V), Recursive stack.*/
 #include <stdio.h>
 #include <limits.h>
 
